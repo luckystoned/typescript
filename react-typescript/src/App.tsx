@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import List from './components/List';
+import Form from './components/Form';
+
 import './App.css';
 
 interface Sub {
@@ -39,6 +41,7 @@ function App() {
     <div className="App">
       <h1>Luckys Subs!</h1>
       <List subs={subs} />
+      <Form />
     </div>
   );
 }
