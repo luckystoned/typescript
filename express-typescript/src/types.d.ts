@@ -8,5 +8,6 @@ export interface DiaryEntry {
   comment: string
 }
 
+// Export types withouth x prop.
 export type NonSensitiveInfoDiaryEntry = Omit<DiaryEntry, 'comment'>
 export type NewDiaryEntry = Omit<DiaryEntry, 'id'>
